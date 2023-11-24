@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: auto;
+}
+.header {
+  color: white;
+
+  background-color: #0f2d48;
+}
+.header-row-one {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.header-auth-links * {
+  margin: 0 10px;
+}
+.navbar {
+  height: 30px;
+  width: 100%;
+  background-color: #154e81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navbar-fixed {
+  position: absolute;
+  bottom: 0;
+}
+.main {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.container-1 {
+  display: flex;
+  color: white;
+}
+.main-box-1 {
+  height: 90vh;
+  flex: 75%;
+  background: url('https://fsre.sum.ba/img/cover.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.main-box-1-content * {
+  margin: 10px 0;
+}
+.main-box-2 {
+  height: 90vh;
+  flex: 25%;
+  background: url('https://fsre.sum.ba/img/cover_slika.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.line-decoration {
+  width: 100px;
+  margin: 5px 0;
+  border: 2px solid red;
+}
+.link {
+  color: white;
+  background: none;
+  border: 2px solid red;
+  padding: 8px 20px;
+}
+.text-black {
+  color: black;
+}
+.container-2 {
+  height: auto;
+  padding: 20px 20px;
+  color: black;
+}
+.container-2 > h1 {
+  margin: 40px 0;
+}
+.container-2-fakulteti {
+  max-width: 2000px;
+  display: flex;
+
+  gap: 20px;
+}
+.container-2-fakulteti > div {
+  flex: 33.333%;
+
+  padding: 20px;
+}
+
+.container-2-fakulteti > div:nth-child(1) {
+  background-color: lightblue;
+}
+.container-2-fakulteti > div:nth-child(2) {
+  background-color: rgb(255, 123, 123);
+}
+.container-2-fakulteti > div:nth-child(3) {
+  background-color: rgb(255, 255, 197);
+}
+.container-2-fakulteti p {
+  margin: 30px 60px 30px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  color: white;
+  position: relative;
+  height: 200px;
+  background-color: #0f2d48;
+}
+footer > div {
+  padding: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .container-1 {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .main-box-1 {
+    flex: 100%;
+  }
+  .main-box-2 {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hide {
+    display: none;
+  }
+  .main-box-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container-2-fakulteti {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-2-fakulteti > div {
+    flex: 100%;
+  }
+}
